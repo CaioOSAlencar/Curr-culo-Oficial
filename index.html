@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seu Nome - Desenvolvedor Web Full-Stack</title>
+    <meta name="description" content="Portfólio profissional de [Seu Nome] - Desenvolvedor Web Full-Stack especializado em tecnologias modernas">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">
+                <span>Portfólio</span>
+            </a>
+            
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link">Início</a>
+                <a href="#about" class="nav-link">Sobre</a>
+                <a href="#projects" class="nav-link">Projetos</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#blog" class="nav-link">Blog</a>
+                <a href="#contact" class="nav-link">Contato</a>
+            </div>
+            
+            <div class="nav-toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-name">
+                        Olá, eu sou <span class="highlight">Seu Nome</span>
+                    </h1>
+                    <h2 class="hero-title">Desenvolvedor Web Full-Stack</h2>
+                    <p class="hero-description">
+                        Especialista em criar soluções web modernas e escaláveis, 
+                        transformando ideias em experiências digitais excepcionais.
+                    </p>
+                    
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">Ver Projetos</a>
+                        <a href="assets/cv.pdf" class="btn btn-secondary" target="_blank">
+                            <i class="fas fa-download"></i>
+                            Baixar CV
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="hero-image">
+                    <div class="image-container">
+                        <img src="images/profile.jpg" alt="Foto de perfil" class="profile-img">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="scroll-indicator">
+                <a href="#about">
+                    <i class="fas fa-chevron-down"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">Sobre Mim</h2>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-description">
+                        Desenvolvedor Full-Stack com <strong>X anos de experiência</strong> 
+                        especializado em <strong>JavaScript, React, Node.js</strong> e tecnologias modernas. 
+                        Apaixonado por criar soluções inovadoras e escaláveis.
+                    </p>
+                    <p>
+                        Atualmente busco oportunidades em <strong>desenvolvimento web</strong> 
+                        onde posso contribuir com minha expertise técnica e visão estratégica 
+                        para projetos desafiadores e impactantes.
+                    </p>
+                    
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">X+</span>
+                            <span class="stat-label">Anos de Experiência</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">X+</span>
+                            <span class="stat-label">Projetos Concluídos</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">X+</span>
+                            <span class="stat-label">Tecnologias</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-image">
+                    <img src="images/about-coding.jpg" alt="Desenvolvendo código" class="about-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Projetos em Destaque</h2>
+            <p class="section-subtitle">Cases que demonstram minhas habilidades técnicas e criatividade</p>
+            
+            <div class="projects-grid">
+                <!-- Projeto 1 -->
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="images/project1.jpg" alt="Projeto 1">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="project-link" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-content">
+                        <h3 class="project-title">Nome do Projeto 1</h3>
+                        <p class="project-description">
+                            Breve descrição do projeto, tecnologias utilizadas e 
+                            principais funcionalidades implementadas.
+                        </p>
+                        
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">MongoDB</span>
+                        </div>
+                        
+                        <div class="project-details">
+                            <button class="btn-details" data-project="1">Ver Detalhes</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Projeto 2 -->
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="images/project2.jpg" alt="Projeto 2">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="project-link" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-content">
+                        <h3 class="project-title">Nome do Projeto 2</h3>
+                        <p class="project-description">
+                            Descrição do segundo projeto destacando os desafios 
+                            técnicos superados e resultados obtidos.
+                        </p>
+                        
+                        <div class="project-tech">
+                            <span class="tech-tag">Vue.js</span>
+                            <span class="tech-tag">Laravel</span>
+                            <span class="tech-tag">MySQL</span>
+                        </div>
+                        
+                        <div class="project-details">
+                            <button class="btn-details" data-project="2">Ver Detalhes</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Projeto 3 -->
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="images/project3.jpg" alt="Projeto 3">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="project-link" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-content">
+                        <h3 class="project-title">Nome do Projeto 3</h3>
+                        <p class="project-description">
+                            Terceiro projeto mostrando versatilidade em diferentes 
+                            tecnologias e abordagens de desenvolvimento.
+                        </p>
+                        
+                        <div class="project-tech">
+                            <span class="tech-tag">Angular</span>
+                            <span class="tech-tag">Express</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                        </div>
+                        
+                        <div class="project-details">
+                            <button class="btn-details" data-project="3">Ver Detalhes</button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            
+            <div class="projects-cta">
+                <a href="#contact" class="btn btn-primary">Vamos Conversar Sobre Seus Projetos</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Skills & Tecnologias</h2>
+            <p class="section-subtitle">Ferramentas e tecnologias que domino</p>
+            
+            <div class="skills-categories">
+                <!-- Frontend -->
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-laptop-code"></i>
+                        Frontend
+                    </h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">HTML5 & CSS3</span>
+                                <span class="skill-level advanced">Avançado</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="95%"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">JavaScript</span>
+                                <span class="skill-level advanced">Avançado</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90%"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">React.js</span>
+                                <span class="skill-level advanced">Avançado</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85%"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Vue.js</span>
+                                <span class="skill-level intermediate">Intermediário</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Backend -->
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-server"></i>
+                        Backend
+                    </h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Node.js</span>
+                                <span class="skill-level advanced">Avançado</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="88%"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Express.js</span>
+                                <span class="skill-level advanced">Avançado</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85%"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Python</span>
+                                <span class="skill-level intermediate">Intermediário</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="70%"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">PHP</span>
+                                <span class="skill-level intermediate">Intermediário</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="65%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Database & Tools -->
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-database"></i>
+                        Database & Ferramentas
+                    </h3>
+                    <div class="tech-tags">
+                        <span class="tech-tag advanced">MongoDB</span>
+                        <span class="tech-tag advanced">MySQL</span>
+                        <span class="tech-tag intermediate">PostgreSQL</span>
+                        <span class="tech-tag advanced">Git & GitHub</span>
+                        <span class="tech-tag intermediate">Docker</span>
+                        <span class="tech-tag intermediate">AWS</span>
+                        <span class="tech-tag advanced">Figma</span>
+                        <span class="tech-tag intermediate">Linux</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="blog">
+        <div class="container">
+            <h2 class="section-title">Blog & Notas Técnicas</h2>
+            <p class="section-subtitle">Compartilhando conhecimento e experiências</p>
+            
+            <div class="blog-grid">
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="images/blog1.jpg" alt="Post do blog">
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="blog-date">15 Out, 2024</span>
+                            <span class="blog-category">JavaScript</span>
+                        </div>
+                        <h3 class="blog-title">Como Otimizar Performance em React</h3>
+                        <p class="blog-excerpt">
+                            Técnicas avançadas para melhorar a performance de aplicações React, 
+                            incluindo memoização, lazy loading e code splitting.
+                        </p>
+                        <a href="blog/post1.html" class="blog-link">Ler mais</a>
+                    </div>
+                </article>
+
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="images/blog2.jpg" alt="Post do blog">
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="blog-date">10 Out, 2024</span>
+                            <span class="blog-category">Node.js</span>
+                        </div>
+                        <h3 class="blog-title">API REST com Autenticação JWT</h3>
+                        <p class="blog-excerpt">
+                            Guia completo para implementar autenticação segura em APIs REST 
+                            usando JSON Web Tokens e melhores práticas de segurança.
+                        </p>
+                        <a href="blog/post2.html" class="blog-link">Ler mais</a>
+                    </div>
+                </article>
+
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="images/blog3.jpg" alt="Post do blog">
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="blog-date">5 Out, 2024</span>
+                            <span class="blog-category">DevOps</span>
+                        </div>
+                        <h3 class="blog-title">Deploy Automatizado com Docker</h3>
+                        <p class="blog-excerpt">
+                            Como configurar pipelines de CI/CD com Docker para deploy 
+                            automatizado e confiável de aplicações web.
+                        </p>
+                        <a href="blog/post3.html" class="blog-link">Ler mais</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Vamos Trabalhar Juntos</h2>
+            <p class="section-subtitle">Tem um projeto em mente? Entre em contato!</p>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Informações de Contato</h3>
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <span class="method-label">Email</span>
+                                <a href="mailto:seu.email@gmail.com">seu.email@gmail.com</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <i class="fab fa-linkedin"></i>
+                            <div>
+                                <span class="method-label">LinkedIn</span>
+                                <a href="https://linkedin.com/in/seuperfil" target="_blank">linkedin.com/in/seuperfil</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <i class="fab fa-github"></i>
+                            <div>
+                                <span class="method-label">GitHub</span>
+                                <a href="https://github.com/seuusuario" target="_blank">github.com/seuusuario</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <i class="fas fa-globe"></i>
+                            <div>
+                                <span class="method-label">Deploy/Portfolio</span>
+                                <a href="https://seusite.com" target="_blank">seusite.com</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <form class="contact-form" id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Nome</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject">Assunto</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Mensagem</label>
+                        <textarea id="message" name="message" rows="6" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <p>&copy; 2024 Seu Nome. Todos os direitos reservados.</p>
+                </div>
+                
+                <div class="footer-center">
+                    <div class="footer-links">
+                        <a href="assets/cv.pdf" target="_blank">CV em PDF</a>
+                        <a href="#privacy">Política de Privacidade</a>
+                    </div>
+                </div>
+                
+                <div class="footer-right">
+                    <div class="social-links">
+                        <a href="https://linkedin.com/in/seuperfil" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/seuusuario" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="mailto:seu.email@gmail.com">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Project Modal -->
+    <div class="modal" id="project-modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <div class="modal-body" id="modal-body">
+                <!-- Content será inserido via JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/script.js"></script>
+</body>
+</html>
