@@ -186,7 +186,7 @@ class ScrollAnimations {
 class ProjectModal {
     constructor() {
         this.projectData = {
-            1: {
+            SiteDeHoroscopo: {
                 title: "Noctis - Site de Horóscopo",
                 description: "Aplicação web completa para consulta de horóscopos com cálculos astrológicos precisos. Sistema full-stack com Next.js, API RESTful, autenticação JWT, testes automatizados e deploy containerizado.",
                 image: "images/noctis-logo.png",
