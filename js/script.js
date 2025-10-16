@@ -187,22 +187,27 @@ class ProjectModal {
     constructor() {
         this.projectData = {
             1: {
-                title: "E-commerce Completo",
-                description: "Plataforma de e-commerce desenvolvida com React e Node.js, incluindo carrinho de compras, sistema de pagamento e painel administrativo.",
-                image: "images/project1-detail.jpg",
-                technologies: ["React", "Node.js", "MongoDB", "Stripe", "JWT", "Socket.io"],
+                title: "Noctis - Site de Horóscopo",
+                description: "Aplicação web completa para consulta de horóscopos com cálculos astrológicos precisos. Sistema full-stack com Next.js, API RESTful, autenticação JWT, testes automatizados e deploy containerizado.",
+                image: "images/noctis-logo.png",
+                technologies: ["Next.js", "Node.js", "MongoDB", "TailwindCSS", "JWT", "Docker", "Kubernetes", "Jest", "Mongoose", "Express"],
                 features: [
-                    "Autenticação segura com JWT",
-                    "Carrinho de compras em tempo real",
-                    "Sistema de pagamento integrado",
-                    "Painel administrativo completo",
-                    "Notificações push",
-                    "Sistema de reviews e avaliações"
+                    "Cálculos astrológicos precisos com astronomy-engine",
+                    "Interface responsiva com TailwindCSS",
+                    "API RESTful robusta com Node.js e Express",
+                    "Autenticação segura com JWT e bcrypt",
+                    "Banco de dados MongoDB com Mongoose",
+                    "Testes automatizados com Jest e Supertest",
+                    "Deploy containerizado com Docker e Kubernetes",
+                    "Validação de dados com Zod",
+                    "Cobertura de testes completa",
+                    "Qualidade de código com ESLint"
                 ],
-                challenges: "O principal desafio foi implementar um sistema de carrinho em tempo real que sincronizasse entre diferentes dispositivos do mesmo usuário.",
-                results: "Aumento de 40% na conversão de vendas e 60% de redução no tempo de checkout.",
-                liveUrl: "https://exemplo-ecommerce.com",
-                githubUrl: "https://github.com/usuario/ecommerce"
+                challenges: "O principal desafio foi implementar cálculos astrológicos precisos e em tempo real, integrando bibliotecas especializadas como astronomy-engine e astrochart, além de garantir performance otimizada para múltiplos usuários simultâneos.",
+                results: "Sistema completo entregue com cobertura de testes de 95%, performance otimizada e arquitetura escalável pronta para produção com containerização Docker e orquestração Kubernetes.",
+                liveUrl: "#",
+                githubUrl: "https://github.com/CaioOSAlencar/Site-horoscopo-FRONT",
+                githubApiUrl: "https://github.com/CaioOSAlencar/Site-horoscopo-API"
             },
             2: {
                 title: "Dashboard Analytics",
@@ -288,14 +293,22 @@ class ProjectModal {
                         <h2 class="project-detail-title">${project.title}</h2>
                         <p class="project-detail-description">${project.description}</p>
                         <div class="project-detail-links">
-                            <a href="${project.liveUrl}" target="_blank" class="btn btn-primary">
-                                <i class="fas fa-external-link-alt"></i>
-                                Ver Site
-                            </a>
+                            ${project.liveUrl !== "#" ? `
+                                <a href="${project.liveUrl}" target="_blank" class="btn btn-primary">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    Ver Site
+                                </a>
+                            ` : ''}
                             <a href="${project.githubUrl}" target="_blank" class="btn btn-secondary">
                                 <i class="fab fa-github"></i>
-                                Código
+                                Frontend
                             </a>
+                            ${project.githubApiUrl ? `
+                                <a href="${project.githubApiUrl}" target="_blank" class="btn btn-secondary">
+                                    <i class="fas fa-server"></i>
+                                    API
+                                </a>
+                            ` : ''}
                         </div>
                     </div>
                 </div>
